@@ -13,7 +13,7 @@ function App() {
       <div>
         <Nav />
         <Switch>
-          <Route exact path={["/", "/books"]} component={Books} />
+          <Route path="/(home|books|)/" component={Books} />
           <Route exact path={["/search"]} component={Search} />
           <Route exact path={"/books/:id"} component={Detail} />
           <Route component={NoMatch} />

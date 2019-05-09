@@ -6,8 +6,8 @@ const BookList = ({ books }) => {
   if (books) {
     const renderedList = books.map(book => {
       return (
-        <ListItem>
-          <BookItem book={book} key={book.id} />
+        <ListItem key={book.id}>
+          <BookItem book={book} />
         </ListItem>
       );
     });

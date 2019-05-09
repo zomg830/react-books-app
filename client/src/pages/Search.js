@@ -2,22 +2,17 @@ import React, { Component } from "react";
 
 import Jumbotron from "../components/Jumbotron";
 import BookList from "../components/BookList";
-import API from "../utils/API";
 import books from "../utils/books";
 import { Col, Row, Container } from "../components/Grid";
 import { Input, FormBtn } from "../components/Form";
 
-const KEY = process.env.REACT_APP_YOUTUBE;
+const KEY = process.env.REACT_APP_BOOKS;
 
 class Books extends Component {
   state = {
     books: [],
     search: ""
   };
-
-  componentDidMount() {
-    this.onTermSubmit("The Great Gatsby");
-  }
 
   handleInputChange = event => {
     const { name, value } = event.target;

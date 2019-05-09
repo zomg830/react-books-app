@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Nav() {
+const Nav = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
       <a className="navbar-brand" href="/">
@@ -34,6 +34,6 @@ function Nav() {
       </div>
     </nav>
   );
-}
+};
 
 export default Nav;
