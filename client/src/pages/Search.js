@@ -32,7 +32,6 @@ class Books extends Component {
       this.setState({
         books: response.data.items
       });
-      console.log("state", this.state);
     }
   };
 
